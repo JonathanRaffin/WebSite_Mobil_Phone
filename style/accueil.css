@@ -1,0 +1,162 @@
+body,html{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100%;
+}
+
+main,h2,p{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*** Image de Couverture ***/
+.couverture{
+    display: table;
+    background: url("../img/img_acc/acc_2000.png") no-repeat center center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.title{
+    margin: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#titre{
+    display: table-cell;
+    color: #fff;
+    text-shadow: 1px 1px 10px black;
+}
+
+#sous-titre{
+    display: none;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 1px 1px 10px black;
+}
+
+.couverture:hover  #sous-titre{
+    display: table-cell;
+}
+
+/*** Texte ***/
+
+.intro_site{
+    max-width: 650px;
+    margin: 50px auto;
+    text-indent: 50px;
+    text-align: justify;
+    font-size: 24px;
+    color: #000;
+}
+
+#fin_intro{
+    max-width: 650px;
+    margin: 50px auto;
+    text-indent: 50px;
+    text-align: right;
+    font-size: 24px;
+    color: #000;
+
+    
+}
+
+/*** Aside (images) ***/
+
+aside{
+    margin: 0 300px;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*border: 3px solid #000;*/
+    border-radius: 10px;
+    background-color: #dedcd9;
+}
+
+figure{
+    padding: 15px;
+}
+
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+/*** Pied de Page ***/
+
+footer{ 
+    margin: 10px 30px;
+    display: inline;
+    color: grey;
+    font-size: 14px;
+}
+
+#copyright{
+    padding:  0 30px;
+}
+
+.src{
+    text-align: right;
+    padding-right: 5px;
+    color: grey;
+    font-size: 14px;
+}
+
+@media (max-width:1800px){
+    aside{
+        display: block;
+        margin: 30px 400px;
+    }
+}
+
+@media (max-width:1400px){
+    aside{
+        margin: 30px 200px;
+    }
+}
+
+@media (max-width:1000px){
+    .couverture{
+        background-image: url('../img/img_acc/verti.png');
+    }
+    .title{
+        margin: 300px auto;
+    }
+    aside{
+        margin: 30px 100px;
+    }
+    
+}
+
+@media (max-width:700px){
+    .intro_site,#fin_intro{
+        margin: 30px;
+    }
+    .title{
+        margin: 400px auto;
+    }
+}
+
+@media (max-width:630px){
+    aside{
+        display: none;
+    }
+}
+
+@media (max-width:500px){
+    #titre{
+        font-size: 45px;
+    }
+    #sous-titre{
+        font-size: 25px;
+    }
+}
